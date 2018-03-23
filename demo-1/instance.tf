@@ -1,5 +1,7 @@
 resource "aws_instance" "example" {
   ami           = "${lookup(var.AMIS, var.AWS_REGION)}"
   instance_type = "t2.micro"
-  name = "ancil-demo-example"
+  tags {
+    Name = "ancil-demo1-example"
+  } 
 }
