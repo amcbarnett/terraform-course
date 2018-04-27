@@ -11,3 +11,7 @@ variable "AMIS" {
     eu-west-1 = "ami-1b791862"
   }
 }
+
+variable "AWS_INSTANCE_TYPE" {
+  default = "t2.micro"
+}
